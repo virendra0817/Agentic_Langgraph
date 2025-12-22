@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Job Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>🧠 AI Job Application Assistant</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Upload Resume (PDF):</label>
+        <input type="file" name="resume" required><br>
+        <label>Paste Job Description:</label>
+        <textarea name="job_desc" rows="6" required></textarea><br>
+        <button type="submit">Analyze & Generate</button>
+    </form>
+    {% if error %}<p class="error">{{ error }}</p>{% endif %}
+</div>
+</body>
+</html>

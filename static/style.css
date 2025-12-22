@@ -1,0 +1,173 @@
+/* ===== General Page Styling ===== */
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 900px;
+  background: #ffffff;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Headings ===== */
+h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff22;
+  padding-bottom: 8px;
+}
+
+/* ===== Form Styling ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+input[type="file"],
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fefefe;
+  transition: 0.3s;
+}
+
+input[type="file"]:hover,
+textarea:focus {
+  border-color: #ff3c00cc;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: #00ff1565;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fafafa;
+  border-left: 4px solid #00f7ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.7;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  display: flex;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card.info {
+  display: flex;
+  border-left-color: #28a745;
+  background: #f8fff8;
+}
+
+/* ===== Back Link ===== */
+.back-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #02080f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: #b3008c;
+}
+
+/* ===== Error Message ===== */
+.error {
+  color: #e74c3c;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+    margin: 30px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  pre {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Subtle Fade Animation ===== */
+.container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
